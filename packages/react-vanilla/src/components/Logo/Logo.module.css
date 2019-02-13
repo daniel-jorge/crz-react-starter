@@ -1,0 +1,28 @@
+:root {
+  --duration: 2s;
+}
+
+.root {
+  perspective: 350px;
+  height: 20vh;
+}
+
+.spin {
+  animation: spin var(--duration) linear;
+  height: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate3d(0, 1, 0, -90deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+}

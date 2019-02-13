@@ -1,0 +1,26 @@
+{
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      ".vscode/*",
+      "public/*"
+    ]
+  },
+  "rules": {
+    "prettier": true,
+    "interface-name": false,
+    "no-console": [ true, { "allow": ["warn", "error"] }],
+    "no-empty-interface": false,
+    "no-submodule-imports": false,
+    "max-classes-per-file": false,
+    "member-access": false,
+    "member-ordering": [true, { "order": "fields-first" }],
+    "object-literal-sort-keys": false,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": "independent",
+  "packages": ["packages/create-app"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "registry": "http://localhost:8081/repository/npm-private/"
+    }
+  }
+}

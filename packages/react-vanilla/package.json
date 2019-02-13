@@ -1,0 +1,79 @@
+{
+  "name": "@crz/react-typescript-starter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "lint:fix": "tslint -c tslint.json --fix --format verbose src/**/*.{ts,tsx}"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 120
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/setupTests.ts"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-intl": "^2.7.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.0",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.10.4",
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-intl": "^2.3.17",
+    "@types/react-router-dom": "^4.3.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "husky": "^1.2.0",
+    "jest-enzyme": "^7.0.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "1.16.4",
+    "react-test-renderer": "^16.8.4",
+    "source-map-explorer": "^1.7.0",
+    "tslint": "^5.13.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0"
+  }
+}

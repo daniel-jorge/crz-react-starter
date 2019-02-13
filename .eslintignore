@@ -1,0 +1,11 @@
+.docz/
+.vscode/
+.rpt2_*/
+coverage/
+dist/
+node_modules/
+plop-templates/
+
+jest.config.js
+plopfile.js
+commitlint.config.js

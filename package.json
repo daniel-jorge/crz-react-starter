@@ -1,0 +1,27 @@
+{
+  "name": "@crz/react-starter",
+  "author": "Daniel Jorge <dani2013@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "version": "0.0.1",
+  "workspaces": [
+    "packages/create-app"
+  ],
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 120
+  },
+  "dependencies": {
+    "lerna": "^3.13.1"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.18",
+    "husky": "3.0.5",
+    "lint-staged": "9.2.5",
+    "prettier": "1.18.2",
+    "tsdx": "0.9.2",
+    "typescript": "3.6.3"
+  }
+}
